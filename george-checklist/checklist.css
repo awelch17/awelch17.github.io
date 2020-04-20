@@ -1,0 +1,21 @@
+
+:root {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.75em;
+}
+
+span {
+    color: #555555;
+}
+
+.inc-ml {
+    margin-left: 1em;
+}
+
+.inc-mt {
+    margin-top: 3em;
+}
+
+.inc-fs {
+    font-size: 1.25em;
+}
