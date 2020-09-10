@@ -1,0 +1,56 @@
+
+:root {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.75em;
+}
+
+.inc-ml {
+    margin-left: 1em;
+}
+
+.inc-mt {
+    margin-top: 3em;
+}
+
+.inc-pl {
+    padding-left: 2em;
+}
+
+.inc-pr {
+    padding-right: 2em;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.card {
+    margin: 1em;
+    width: 24em;
+    min-height: 18em;
+}
+
+.card-title {
+    font-size: 2em;
+}
+
+.card-description {
+    font-size: 1.25em;
+}
+
+p {
+    color: #555555;
+}
+
+.search-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,11 @@
+{
+    "name": "test source",
+    "author": "kekw author",
+    "categories": ["primary", "record"],
+    "tags": ["foo", "bar"],
+    "notes": "so this is a nice little test source and i think its veyr nice",
+    "content": [
+        ["this is defienitely a real apragraph", "misspelled"],
+        ["this is also definitely a real paragraph", "correctly spelled"]
+    ]
+}
