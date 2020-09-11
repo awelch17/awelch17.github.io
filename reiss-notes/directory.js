@@ -1,3 +1,1 @@
-var sources = [
-    
-]
+var sources = [{"name": "num23kwerkfjwoeijf", "author": "kekw author number kek seven", "categories": ["primary", "record"], "tags": ["foo", "bar"], "location": "2020-69-420-kekw-author-number-kek-seven-okaylmao.html"}, {"name": "test source", "author": "kekw author", "categories": ["primary", "record"], "tags": ["foo", "bar"], "location": "2020-69-420-kekw-author-okaylmao2.html"}]

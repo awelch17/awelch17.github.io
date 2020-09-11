@@ -11,7 +11,9 @@ JSON
 ```json
 {
     "name": name,
+    "short_name": short_name,
     "author": author,
+    "date": datestr,
     "categories": primary/secondary, record/commentary,
     "tags": [tags],
     "notes": notes,

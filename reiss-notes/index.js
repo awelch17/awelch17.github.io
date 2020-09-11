@@ -4,7 +4,7 @@ var filters = new Set();
 
 function createSearchResult(index) {
     var outera = document.createElement("A");
-    outera.href = "pages/" + sources[index][location];
+    outera.href = "pages/" + sources[index]["location"];
     outera.id = "result" + index.toString();
     document.getElementById("search-results").appendChild(outera);
     
@@ -33,11 +33,21 @@ function createSearchResult(index) {
 }
 
 
+function areTagsIncluded(tags, search_string) {
+    for(var tag in tags) {
+        if(search_string.includes(tag)) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
 
 function filterResults() {
     for(var i = 0; i < sources.length; i++) {
         if(searched_string !== null) {
-            if(!(sources[i]["name"].toLowerCase().includes(searched_string)) && !(sources[i]["author"].toLowerCase().includes(searched_string))) {
+            if(!(sources[i]["name"].toLowerCase().includes(searched_string)) && !(sources[i]["author"].toLowerCase().includes(searched_string)) && !areTagsIncluded(sources[i]["tags"], searched_string)) {
                 document.getElementById("result" + i.toString()).style.display = "none";
                 continue;
             }

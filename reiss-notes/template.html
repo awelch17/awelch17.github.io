@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>{{ source["name"] }}</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo inc-ml">Adv. MG History Notes</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="inc-fs">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container inc-mt">
+            <h1 class="center-title">{{ source["name"] }}</h1>
+            <h4 class="center">{{ source["author"] }}</h4>
+            <h6 class="center">{{ source["date"] }}</h4>
+            <h6 class="center">Categories: {{ categories }}</h5>
+            <h6 class="center">Tags: {{ tags }}</h5>
+            
+            <div class="inc-mt">
+                <h3 class="center">General Notes</h3>
+                <p class="inc-lh">{{ source["notes"] }}</p>
+            </div>
+            
+            
+            <div class="inc-mt">
+                <div class="content">
+                    <h4 class="content-left">Source</h4>
+                    
+                    <h4 class="content-right">Notes</h4>
+                </div>
+                
+                {% for para in source["content"] %}
+                    <div class="content">
+                        <p class="content-left inc-lh">{{ para[0] }}</p>
+                        
+                        <p class="content-right inc-lh">{{ para[1] }}</p>
+                    </div>
+                {% endfor %}
+                
+            </div>
+            
+            <div class="inc-mt" style="margin-bottom: 16em;">
+            <button class="waves-effect waves-light btn" id="raw-text-toggle" onclick="toggleRawText()">Show Raw Text</button>
+            
+            <p id="raw-text" class="inc-lh" style="display: none;">{{ raw_text }}</p>
+            
+            </div>
+        </div>
+        
+        <script src="../page.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
