@@ -34,8 +34,11 @@ function createSearchResult(index) {
 
 
 function areTagsIncluded(tags, search_string) {
+    console.log(tags)
+    console.log(search_string)
+    console.log("-----")
     for(var tag in tags) {
-        if(search_string.includes(tag)) {
+        if(search_string.includes(tags[tag].toLowerCase())) {
             return true;
         }
     }
@@ -47,7 +50,7 @@ function areTagsIncluded(tags, search_string) {
 function filterResults() {
     for(var i = 0; i < sources.length; i++) {
         if(searched_string !== null) {
-            if(!(sources[i]["name"].toLowerCase().includes(searched_string)) && !(sources[i]["author"].toLowerCase().includes(searched_string)) && !areTagsIncluded(sources[i]["tags"], searched_string)) {
+            if(!(sources[i]["name"].toLowerCase().includes(searched_string)) && !(sources[i]["author"].toLowerCase().includes(searched_string)) && !areTagsIncluded(sources[i]["tags"], searched_string.toLowerCase())) {
                 document.getElementById("result" + i.toString()).style.display = "none";
                 continue;
             }
