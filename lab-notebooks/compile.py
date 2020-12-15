@@ -1,6 +1,5 @@
 import os
 import json
-import copy
 
 from jinja2 import Template
 import markdown

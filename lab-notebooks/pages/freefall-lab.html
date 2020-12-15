@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Lab Notebooks</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo inc-ml">Lab Notebooks</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="inc-fs">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container inc-mt lab-content">
+            <h1>Freefall Lab</h1>
+<p><img alt="" src="https://i.ytimg.com/vi/B52BrdY_uA4/maxresdefault.jpg" /></p>
+<h2>Introduction</h2>
+<p>We attempted to measure the height of Mason's ceiling by dropping a pencil from the top of it and measuring how long it took for the pencil to hit the floor. By using the 1D kinematics equations (in particular, <code>d = vt + (a*t^2)/2</code>), we should be able to find out how far the pencil travelled during its fall, and by extension, the height of the ceiling. We should then be able to get a second estimate by comparing known heights of objects to the height of the ceiling, and use this to determine whether or not the estimate found earlier was accurate. My hypothesis is that this method of estimating the height of the ceiling will be reasonably accurate, and will be confirmed by the verification method.</p>
+<h2>Procedure</h2>
+<h3>Materials</h3>
+<ul>
+<li>Pencil</li>
+<li>Stopwatch</li>
+<li>Mason's Room</li>
+</ul>
+<h3>Method</h3>
+<p>Hold the pencil next to the ceiling. Simultaneously release the pencil and start the stopwatch, and then stop the stopwatch when the pencil hits the floor. Record the time on the stopwatch. Repeat as many times as desired, in this case 10.</p>
+<p>Once finished, find an accurate estimate of how long it takes for the pencil to fall from the ceiling to the floor by averaging the data points collected earlier.</p>
+<p>Plug the value found into the equation <code>d = vt + (a*t^2)/2</code>. Since the initial velocity of the pencil was 0 (it was not moving before it was dropped), the equation can be simplified to <code>d = (a*t^2)/2</code>. Since the only major force accelerating the pencil is gravity, <code>a</code> in the equation will be <code>-9.8m/s^2</code>. This yields a new equation of <code>d = (-9.8m/s^2 * t^2)/2</code>. The average free-fall time found earlier can be substituted for <code>t</code>, and then the equation solved for <code>d</code>. The value of <code>t</code> is the distance the pencil fell to get to the floor. However, this will be a negative number, since the pencil is falling on the y axis. The height of the ceiling will be the absolute value of this number.</p>
+<p>To verify this result, a similarly sized object of which the height is known should be used to find a second estimate. For example, if a person is known to be 60 inches tall and is approximately half the height of the ceiling, then the ceiling is approximately 120 inches tall.</p>
+<h2>Results</h2>
+<table>
+<thead>
+<tr>
+<th>Trial Number</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.73 seconds</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.73 seconds</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.73 seconds</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0.71 seconds</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0.77 seconds</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0.71 seconds</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0.85 seconds</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0.65 seconds</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0.65 seconds</td>
+</tr>
+<tr>
+<td>10</td>
+<td>0.74 seconds</td>
+</tr>
+</tbody>
+</table>
+<p>The average of these results is calculated by adding together the results and dividing the resulting value by the number of trials.</p>
+<p><code>(0.73 + 0.73 + 0.73 + 0.71 + 0.77 + 0.71 + 0.85 + 0.65 + 0.65 + 0.74) / 10 = 0.727</code></p>
+<p>The value found, <code>0.727</code> seconds, is substituted into the equation described in the procedure, and the equation is then solved.</p>
+<p><code>d = (-9.8m/s^2 * [0.727s]^2)/2</code></p>
+<p><code>d = (-9.8m/s^2 * 0.528529s^2)/2</code></p>
+<p><code>d = -2.5897921m</code></p>
+<p>The estimate of the height of the ceiling is approximately <code>2.59m</code>, which is approximately <code>8.5ft</code> or <code>102 in.</code></p>
+<p>Mason is 70 inches tall, and is approximately 2/3 the height of the ceiling. A simple equation of ratios will yield a verification estimate.</p>
+<p><code>h/1 = 70 in./0.66</code></p>
+<p><code>h = 105 in.</code></p>
+<p>The second estimate of the height of the ceiling is <code>105</code> inches, which is very close to the first estimate of <code>102</code> inches.</p>
+<h2>Potential Errors</h2>
+<p>Given the very short time it takes for the pencil to fall from the ceiling, it is possible that the human measuring the time with the stopwatch did not react fast enough to get an accurate reading. It is also possible that the human recording the data did not start the stopwatch at exactly the right time, or that the stopwatch was somehow defective.</p>
+<p>It is also possible that some force other than gravity had a significant impact on the fall of the pencil (e.g. air resistance). In this case, our equations which only considered gravity would be inaccurate.</p>
+<p>However, we also used a different method for measuring the height of the ceiling, and it yielded a similar result. Although it is possible that this other method was also flawed, it is unlikely that both methods were flawed and still gave similar results. I believe that it is rational to conclude that both methods were reasonably accurate, and that none of the aforementioned potential errors occurred.</p>
+<h2>Conclusion</h2>
+<p>The similarity between our two estimates suggests that my hypothesis was correct: we were indeed able to accurately estimate the height of Mason's ceiling using only a pencil, a stopwatch, and the 1D kinematics equations.</p>
+<p>The importance of this lab in respect to our overall study of forces is that it lets us apply our knowledge of physics to a real-world problem, and gives us further practice with these concepts.</p>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

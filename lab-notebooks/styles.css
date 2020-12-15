@@ -12,12 +12,20 @@
     margin-top: 3em;
 }
 
+.inc-mb {
+    margin-bottom: 3em;
+}
+
 .inc-pl {
     padding-left: 2em;
 }
 
 .inc-pr {
     padding-right: 2em;
+}
+
+.inc-fs {
+    font-size: 1em;
 }
 
 .center-title {
@@ -66,4 +74,33 @@ p {
     margin-bottom: auto;
     width: 30%;
     text-align: right;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    padding-bottom: 10%;
+}
+
+li {
+    margin-left: 2em;
+    font-size: 1.33em;
+}
+
+td {
+    font-size: 1.33em;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+.lab-content {
+    line-height: 2.5em;
+}
+
+.lab-content li {
+    list-style-type: disc !important;
 }

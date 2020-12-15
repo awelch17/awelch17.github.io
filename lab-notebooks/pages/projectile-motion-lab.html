@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Lab Notebooks</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo inc-ml">Lab Notebooks</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="inc-fs">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container inc-mt lab-content">
+            <h1>Projectile Motion Lab</h1>
+<p><img alt="" src="https://static.wikia.nocookie.net/inheritance/images/2/2e/Trebuchet.jpg/revision/latest?cb=20110419103616" /></p>
+<h2>Introduction</h2>
+<p>In this lab, I attempted to find the optimal launch angle of an object using a stopwatch and a measuring tape. By using the time spent in the air to determine the initial vertical velocity of the object, and the combination of the distance travelled and initial vertical velocity to find the total initial velocity and launch angle, I should be able to approximate the launch angle of a given trial with only a stopwatch and a measuring tape.</p>
+<h2>Procedure</h2>
+<h3>Materials</h3>
+<ul>
+<li>Fish-shaped cat toy</li>
+<li>Measuring tape</li>
+<li>Stopwatch</li>
+</ul>
+<h3>Method</h3>
+<p>Starting at the ground, simultaneously throw the cat toy and start the stopwatch. Stop the stopwatch when the cat toy hits the ground. Record both the time on the stopwatch and the distance travelled by the cat toy. Repeat as many times as desired (in this case 10).</p>
+<p>Use this data to calculate the initial launch angle of each trial. This process is made much easier by a spreadsheet with the following columns:</p>
+<ul>
+<li>Theta (Radians)</li>
+<li>Theta (Degrees)</li>
+<li>Range (Meters)</li>
+<li>Time (Seconds)</li>
+<li>Initial Velocity (Meters/Second)</li>
+</ul>
+<p>Equations:</p>
+<p>Column 1: <code>=ATAN(9.81*INDIRECT("R[0]C[3]",FALSE)^2/(INDIRECT("R[0]C[2]",FALSE)*2))</code></p>
+<p>Column 2: <code>=(INDIRECT("R[0]C[-1]", FALSE)*(180/3.14159))</code></p>
+<p>Column 5: <code>=INDIRECT("R[0]C[-2]",FALSE)/(COS(INDIRECT("R[0]C[-4]",FALSE))*INDIRECT("R[0]C[-1]",FALSE))</code></p>
+<p>Compile the results into a scatter plot, and add a quadratic trendline. Estimate the best launch angle by the vertex of the parabola.</p>
+<h2>Results</h2>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSxqfAxPCZa62BOWQ1OaSN9XnLgkYqb6VioNM78bpHIPjynA73aYXFznxlTz28sXhOmKfvpQ64RqMI/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 750px;"></iframe>
+
+<p>The vertex of the trendline is around 45 degrees, suggesting that 45 degrees is the optimal launch angle for throwing this object.</p>
+<h2>Potential Errors</h2>
+<p>There are quite a lot of potential errors in this lab. First and foremost is human error: given the very small timeframes involved, human error in stopwatch operation could significantly impact the results. Furthermore, inconsistencies between initial velocity and launch position caused by human error would also impact the results.</p>
+<p>Secondly, the object in question (the cat toy) often continued to slide forward a non-negligible distance after making contact with the ground. This likely impacted the results in some way or another.</p>
+<p>Thirdly, the conditions of the launches may have differed in some way that I did not notice. This would also impact the results.</p>
+<p>Fourthly, the object in question (the cat toy) might not be representative of objects in general, and the optimal launch angle of this particular object may differ significantly from the optimal launch angle of most objects. For this reason, my conclusions do not attempt to extend these results beyond the specific object in question.</p>
+<p>Finally, a malfunction or manufacturing error in the measuring devices used would also impact the results.</p>
+<h2>Conclusion</h2>
+<p>The optimal launch angle for the specific object tested (a cat toy) is around 45 degrees.</p>
+<p>This lab is relevant to our overall study of forces as it gives us practical experience and practice in using physics to describe and predict real-world events.</p>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
