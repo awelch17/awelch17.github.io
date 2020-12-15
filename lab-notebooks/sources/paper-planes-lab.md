@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In this lab, we measured the flight distance of paper airplanes and then calculated resultant vectors from this data. The point of this lab was to practice vector math and its real-world applications.
+In this lab, we measured the flight distance of paper airplanes and then calculated resultant vectors from this data. The point of this lab was to practice vector math and its real-world applications. My hypothesis is that the planes will fly relatively straight because my paper airplane design is very good.
 
 ## Procedure
 
@@ -35,7 +35,7 @@ Throw a paper airplane forward from the same spot three times. Each time, measur
 
 `m = sqrt([264cm]^2 + [18cm]^2)`
 
-`m ~ 264.61cm` 
+`m ~ 264.61cm`
 
 `d = arctan(18cm/264cm)`
 
@@ -47,7 +47,7 @@ Resultant Vector: `264.61cm, 3.9 degrees`
 
 `m = sqrt([274cm]^2 + [29cm]^2)`
 
-`m ~ 275.53cm` 
+`m ~ 275.53cm`
 
 `d = arctan(29cm/274cm)`
 
@@ -74,3 +74,5 @@ I would hope that my calculator is not broken. I do not see any other potential 
 ## Conclusion
 
 I collected real-world data and found resultant vectors based off of the data. This is relevant to our overall study of physics as it gives us practice in an important mathematical skill, and its real-world applications.
+
+The greatest deviation in my data was 6 degrees, proving my initial hypothesis that my paper airplane design flew fairly straight.
