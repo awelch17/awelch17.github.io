@@ -1,0 +1,1 @@
+var sources = [{"name": "Test Source", "location": "test-source.html"}]

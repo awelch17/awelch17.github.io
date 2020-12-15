@@ -1,1 +1,0 @@
-var sources = [{"name": "A Season of Revolutions", "author": "Thomas Bender", "categories": ["secondary", "commentary"], "tags": ["1700s", "1800s", "haiti", "revolution", "napoleon", "historiography", "atlantic"], "location": "2011-09-29-thomas-bender-season-of-revolutions.html"}]

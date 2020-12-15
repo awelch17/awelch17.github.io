@@ -27,26 +27,15 @@
 .card {
     margin: 1em;
     width: 24em;
-    min-height: 18em;
 }
 
 .card-title {
-    font-size: 2em;
-}
-
-.card-description {
-    font-size: 1.25em;
+    font-size: 3em !important;
 }
 
 p {
     font-size: 1.33em;
     color: #555555;
-}
-
-.search-settings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #search-results {
