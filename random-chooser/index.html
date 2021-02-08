@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Random Chooser</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo inc-ml">Random Chooser</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="inc-fs">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container inc-mt">
+            <form>
+                <p>
+                    <label>
+                        <input id="qfair" type="checkbox" class="filled-in" onclick="fairSelectionToggled()"/>
+                        <span class="bigtext">Enable "Fair" Selection</span>
+                    </label>
+                </p>
+                
+                <p>"Fair" selection ensures that all other values are chosen at least once before a value is chosen again.</p>
+                
+                <div id="qfair-info">
+                    <p id="qfair-basis-count" class="bigtext">"Fair" Selection Basis Count: 0</p>
+                    <a class="waves-effect waves-light btn" onclick="resetQFairBasis()">Reset "Fair" Selection Basis</a>
+                </div>
+                
+                <input id="text-input" type="text" placeholder="Input Comma-Separated Values Here" style="margin-top: 2em;" oninput="onTextInputChange()"/>
+            </form>
+            
+            <a id="choose-btn" class="waves-effect waves-light btn-large disabled" onclick="choose()">Choose</a>
+            
+            <h4 id="result" style="margin-top: 1em;"></p>
+        </div>
+        
+        <script src="chooser.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
