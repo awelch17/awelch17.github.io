@@ -14,7 +14,7 @@ function setCookie(cname, cvalue) {
   var expires = "Expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/; SameSite=Lax";
 }
-  
+
 
 function getCookie(cname) {
     var name = cname + "=";

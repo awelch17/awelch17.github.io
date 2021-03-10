@@ -1,0 +1,25 @@
+
+.entry-pair {
+    display: flex;
+    padding: 5px !important;
+}
+
+.entry-box {
+    margin: 5px !important;
+}
+
+.flex-expand {
+    flex: 1;
+}
+
+.bigger {
+    min-width: 45vw;
+}
+
+.bigger-title {
+    min-width: calc(45vw + 64px);
+}
+
+.go-button {
+    min-width: 64px;
+}
