@@ -1,1 +1,1 @@
-var sources = [{"name": "Freefall Lab", "location": "freefall-lab.html"}, {"name": "Paper Planes Lab", "location": "paper-planes-lab.html"}, {"name": "Projectile Motion Lab", "location": "projectile-motion-lab.html"}]
+var sources = [{"name": "Freefall Lab", "location": "freefall-lab.html"}, {"name": "Friction Lab", "location": "friction-lab.html"}, {"name": "Paper Planes Lab", "location": "paper-planes-lab.html"}, {"name": "Projectile Motion Lab", "location": "projectile-motion-lab.html"}, {"name": "Stair Climbing Lab", "location": "stair-climbing-lab.html"}]
