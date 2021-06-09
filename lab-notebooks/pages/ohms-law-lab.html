@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Lab Notebooks</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper teal">
+                <a href="#" class="brand-logo inc-ml">Lab Notebooks</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../index.html" class="inc-fs">Go Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container inc-mt lab-content">
+            <h1>Ohm's Law Lab</h1>
+<p><img alt="" src="https://c8.alamy.com/comp/JC778C/detail-of-an-electronic-printed-circuit-board-cool-cyanotype-cool-JC778C.jpg" /></p>
+<h2>Introduction</h2>
+<p>We are aware of the concepts of voltage, current, and resistance, but we are not sure how they are related. This lab attempts to use semi-experimental evidence to show the relationship between voltage, current, and resistance. This is important to determine because it will be necessary to use to determine properties of circuits. I suspect that there is a straightforward linear or hyperbolic relationship between the two.</p>
+<h2>Procedure</h2>
+<h3>Materials</h3>
+<ul>
+<li>https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_en.html</li>
+<li>Spreadsheet Software</li>
+</ul>
+<h3>Method</h3>
+<p>Open the link, which provides a simulation of a circuit with the parameters voltage, current, and resistance.</p>
+<p>Set resistance to a constant value (in this case 500Ω) so that the relationship between the other two values (voltage and current) can be determined.</p>
+<p>Then, vary the voltage and note the resulting current for each given voltage value.</p>
+<p>Once the data is collected, import it into a spreadsheet.</p>
+<p>Create a scatterplot with voltage on the X-axis and current on the Y-axis.</p>
+<p>Determine what type of trendline would best fit the data. This trendline will show the relationship between voltage and current.</p>
+<h2>Results</h2>
+<h3>Spreadsheet</h3>
+<iframe src="https://docs.google.com/spreadsheets/d/1m_hwXqQibY8wJjlHLUG9Iac0JPJ2aItye4w3vzFphY8/edit?usp=sharing" style="width: 100%; height: 1024px;"></iframe>
+
+<h3>Interpretation</h3>
+<p>It seems as if the data points follow a linear trendline perfectly. This would suggest that current is equivalent to voltage times a constant. Supposing that the only factors impacting current, voltage, and resistance are each other, and that resistance has been set to a constant value, it can be determined that the relevant constant is resistance. Further inspection of the data reveals that this is true. For every current value, the corresponding voltage value is equivalent to the current times 500, which happens to be the constant value which resistance was set to. From this information, we can derive the following equation:</p>
+<p><b>V = IR</b></p>
+<p>Where V is voltage, in volts; I is current, in amps; and R is resistance, in ohms.</p>
+<h2>Potential Errors</h2>
+<p>It is possible that the simulation used does not properly represent the relationship between voltage, current, and resistance.</p>
+<p>Furthermore, it is possible that the data does not in fact fit a linear trendline, and would better be modeled by a different type of equation.</p>
+<h2>Conclusion</h2>
+<p>Based on the results in this lab, we can conclude that voltage, current, and resistance are related by the simple equation <b>V = IR</b>. From this, we can deduce the results of certain scenarios. For example, if we varied current rather than voltage, as was done in this experiment, we would find that given a constant resistance, lower current values would result in lower voltage values, and higher current values would result in higher voltage values. Furthermore, if we only varied resistance and set current to be constant, a similar relationship would occur in which higher resistance values would result in higher voltage values, and lower resistance values would result in lower voltage values. Finally, in the case that resistance was varied and voltage was set constant, higher resistance values would result in lower current values, and lower resistance values would result in higher current values.</p>
+<p>This lab is important and useful because now that a basic relationship has been established between voltage, current, and resistance, more properties of circuits can be deduced. For example, if one is attempting to solve for the voltage, current, or resistance of individual parts of combination circuits, knowing the relationship established by this lab is indispensable.</p>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

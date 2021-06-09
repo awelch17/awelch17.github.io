@@ -41,16 +41,28 @@ def create_page(template_text, source_name, source):
 
 
 if(__name__ == "__main__"):
+    print("Starting SSG")
+    
     template_text = ""
     
     with open(os.path.join(os.getcwd(), "template.html")) as f:
         template_text = f.read()
     
     sources = load_all_sources()
+    
+    print("Loaded Sources")
+    print("Making permanent modifications...")
+    
     create_directory_file(sources)
+    
+    print("Generated directory.js")
     
     for file_name in os.listdir(os.path.join(os.getcwd(), "pages")):
         os.remove(os.path.join(os.getcwd(), "pages", file_name))
     
     for source in sources:
         create_page(template_text, source, sources[source])
+    
+    print("Generated pages")
+    
+    print("SSG Complete")
